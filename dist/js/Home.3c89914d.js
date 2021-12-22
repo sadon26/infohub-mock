@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Home"],{d504:function(e,n,o){"use strict";o.r(n);var t=function(){var e=this,n=e.$createElement,o=e._self._c||n;return o("div",[o("p",[e._v("Home page")]),o("router-link",{attrs:{to:{name:"login"}}},[e._v("Go to Login page")])],1)},a=[],r={name:"Home"},i=r,l=o("2877"),p=Object(l["a"])(i,t,a,!1,null,"7aa5865b",null);n["default"]=p.exports}}]);
-//# sourceMappingURL=Home.3c89914d.js.map
