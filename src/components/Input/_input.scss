@@ -1,0 +1,23 @@
+.input {
+  height: 48px;
+  width: 100%;
+  position: relative;
+
+  &__box {
+    color: #909090;
+    border: 1px solid #909090;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    padding: 1.2rem 1.6rem;
+  }
+
+  &__toggle-pass-text {
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #909090;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+}
