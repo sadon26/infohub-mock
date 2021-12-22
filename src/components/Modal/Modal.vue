@@ -48,15 +48,28 @@ export default {
     active() {
       this.showModal = !this.showModal;
     },
+    showModal(value) {
+      if (value) {
+        console.log(value);
+        document.body.style.overflow = "hidden";
+        console.log(document.body.style.overflow);
+
+        return;
+      }
+
+      document.body.style.overflow = "auto";
+    },
   },
 };
 </script>
 
 <style scoped lang="scss">
+@use "../../assets/scss/mixins/index" as *;
+
 .modal {
   &__wrapper {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
 
@@ -82,6 +95,10 @@ export default {
     border-radius: 4px;
     transition: 0.3s all cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 1;
+
+    @include query("mobile") {
+      width: 320px;
+    }
 
     &-center {
       top: 50%;
